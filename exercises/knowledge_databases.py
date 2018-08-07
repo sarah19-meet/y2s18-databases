@@ -44,7 +44,7 @@ def delete_article_by_topic(Article_name):
 def delete_all_articles(Article_name):
 	session.query(Knowledge).delete()
 	session.commit()
-delete_all_articles("Knowledge")
+# delete_all_articles("Knowledge")
 	
 
 def edit_article_rating(update_rating,article_title):
@@ -56,5 +56,5 @@ def edit_article_rating(update_rating,article_title):
 
 edit_article_rating(5,"weather")
 
-	
+print(query_all_articles())	
 
